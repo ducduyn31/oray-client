@@ -4,11 +4,12 @@ import { PageNotFoundComponent } from './shared/components';
 
 import { HomeRoutingModule } from './home/home-routing.module';
 import { DetailRoutingModule } from './detail/detail-routing.module';
+import {OrayframeRoutingModule} from './orayframe/orayframe-routing.module';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'oray',
     pathMatch: 'full'
   },
   {
@@ -21,6 +22,7 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' }),
     HomeRoutingModule,
+    OrayframeRoutingModule,
     DetailRoutingModule
   ],
   exports: [RouterModule]

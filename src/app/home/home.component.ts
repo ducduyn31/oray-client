@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Router} from '@angular/router';
+import {OrayBoxService} from '../core/services/oraybox/oray-box.service';
 
 @Component({
   selector: 'app-home',
@@ -8,10 +8,11 @@ import {Router} from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private router: Router) {
+  constructor(private orayboxService: OrayBoxService) {
   }
 
   ngOnInit(): void {
+    this.orayboxService.getSerialNumber().subscribe(sn => console.log(sn));
   }
 
 
