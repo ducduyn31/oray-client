@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { OrayframeComponent } from './orayframe.component';
-
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {OrayframeComponent} from './orayframe.component';
+import {BrowserModule} from '@angular/platform-browser';
 
 
 @NgModule({
@@ -9,7 +9,9 @@ import { OrayframeComponent } from './orayframe.component';
     OrayframeComponent
   ],
   imports: [
-    CommonModule
-  ]
+    CommonModule,
+    BrowserModule,
+  ],
 })
-export class OrayframeModule { }
+export class OrayframeModule {
+}

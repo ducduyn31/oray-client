@@ -9542,6 +9542,7 @@ function(m) {
         }
         juicer.set("cache", !1),
         f(function(e) {
+            console.log(window.$("#ether-status-template").context.URL)
             var a = juicer($("#ether-status-template").html(), {
                 items: e,
                 hasset: s,
