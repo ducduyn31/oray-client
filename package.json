@@ -1,5 +1,5 @@
 {
-  "name": "angular-electron",
+  "name": "dandelion-router",
   "version": "9.0.7",
   "description": "Angular 11 with Electron (Typescript + SASS + Hot Reload)",
   "homepage": "https://github.com/maximegris/angular-electron",
